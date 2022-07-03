@@ -7,7 +7,12 @@ namespace PhoneNumber.Methods.Internal
 {
     internal static class PhoneNumberHelper
     {
+        /// <summary>
+        /// Set Default Country code
+        /// if phonenumber is less than 10 digits, use this Country as e default country code
+        /// </summary>
         private static string DefaultCountryCode = "98";
+
         /// <summary>
         /// Check if input Phone Number is Correct Or Not 
         /// </summary>
@@ -24,6 +29,12 @@ namespace PhoneNumber.Methods.Internal
                 return false;
             }
         }
+
+        /// <summary>
+        /// Convert Persian or Arabic numbers to Englisih number
+        /// </summary>
+        /// <param name="phoneNumber"></param>
+        /// <returns></returns>
         private static string ToEnglishNumber(string phoneNumber)
         {
             string EnglishNumbers = "";
@@ -42,10 +53,17 @@ namespace PhoneNumber.Methods.Internal
             return EnglishNumbers;
         }
 
+
+        /// <summary>
+        /// Check if entered phone number is correct or not
+        /// check country code, and phone number Scheme
+        /// </summary>
+        /// <param name="phoneNumber"></param>
+        /// <returns></returns>
         public static PhoneNumberResult CorrectPhoneNumber(string phoneNumber)
         {
             if (!IsPhoneNumberFormatCorrect(phoneNumber))
-                PhoneNumberResult.Failed("Phone number Format is not correct");
+                return PhoneNumberResult.Failed("Phone number Format is not correct");
 
             phoneNumber = phoneNumber.Replace("-", "");
             phoneNumber = phoneNumber.Replace("_", "");
@@ -65,7 +83,7 @@ namespace PhoneNumber.Methods.Internal
 
                 string countryCode = phoneNumber.Split(phoneNumberWithoutCode)[0];
                 if (!CountryCodeHelper.IsCodeExist(countryCode))
-                   return PhoneNumberResult.Failed($"Country code : {countryCode} Is not exist");
+                    return PhoneNumberResult.Failed($"Country code : {countryCode} Is not exist");
 
                 return PhoneNumberResult.Succeed(phoneNumber, CountryCodeHelper.GetCountryByCode(countryCode));
             }

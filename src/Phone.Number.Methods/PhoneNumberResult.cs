@@ -14,6 +14,12 @@ namespace PhoneNumber.Methods
         public bool IsSuccess { get; set; }
         public PhoneNumberResultStatus Status { get; set; } = PhoneNumberResultStatus.Success;
 
+        /// <summary>
+        /// Creates an instance of <see cref="PhoneNumberResult"/> which indicates a successful result for correct phone number.
+        /// </summary>
+        /// <param name="correctPhoneNumber"></param>
+        /// <param name="country"></param>
+        /// <returns></returns>
         public static PhoneNumberResult Succeed(string correctPhoneNumber,Country country)
         {
             return new PhoneNumberResult()
@@ -24,6 +30,11 @@ namespace PhoneNumber.Methods
             };
         }
 
+        /// <summary>
+        /// Creates an instance of <see cref="PhoneNumberResult"/> which indicates a failure result.
+        /// </summary>
+        /// <param name="message"></param>
+        /// <returns></returns>
         public static PhoneNumberResult Failed(string message)
         {
             return new PhoneNumberResult()
