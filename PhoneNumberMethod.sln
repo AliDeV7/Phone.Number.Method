@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phone.Number.Methods", "src\Phone.Number.Methods\Phone.Number.Methods.csproj", "{E73E4594-5878-4A00-B32A-892EAA25EB5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phone.Number.Methods.ConsoleSample", "src\Phone.Number.Methods.ConsoleSample\Phone.Number.Methods.ConsoleSample.csproj", "{CD7F678C-90A6-4131-9232-0A03DE5D0573}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E73E4594-5878-4A00-B32A-892EAA25EB5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73E4594-5878-4A00-B32A-892EAA25EB5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73E4594-5878-4A00-B32A-892EAA25EB5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73E4594-5878-4A00-B32A-892EAA25EB5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD7F678C-90A6-4131-9232-0A03DE5D0573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD7F678C-90A6-4131-9232-0A03DE5D0573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD7F678C-90A6-4131-9232-0A03DE5D0573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD7F678C-90A6-4131-9232-0A03DE5D0573}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {060317DF-553E-4FDC-BBBE-4C9A9A56D1DF}
+	EndGlobalSection
+EndGlobal
