@@ -7,7 +7,7 @@ namespace Phone.Number.Methods.ConsoleTest
     {
         static void Main(string[] args)
         {
-            var result = PhoneNumberMethod.GetCorrectPhoneNumber("989370692219");
+            var result = PhoneNumberMethod.GetCorrectPhoneNumber("9afadasdsa370692219");
             if (result.IsSuccess)
             {
                 Console.WriteLine($"{result.CorrectPhoneNumber}");

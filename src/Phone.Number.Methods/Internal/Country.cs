@@ -6,6 +6,9 @@ namespace PhoneNumber.Methods.Internal
 {
     public class Country
     {
+        /// <summary>
+        /// The Name of country
+        /// </summary>
         public string Name { get; set; }
         /// <summary>
         ///  Country Phone Number Code
