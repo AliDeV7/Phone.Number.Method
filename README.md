@@ -9,7 +9,7 @@ This library provides all required functions for Cell phone numbers to check if 
 - Convert Persian And Arabic Digits to English Digits. 
 - Discover name of country from phone number.
 
-Some new Features will add to this package SOON!
+Some new features will add to this package SOON!
 
 ### Install
 After add Package to your project, Call this method to get correct phone number for you database:
