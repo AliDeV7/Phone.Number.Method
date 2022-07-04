@@ -1,4 +1,4 @@
-# Phone Number Methods Library
+# Phone Number Methods
 
 ### About
 This library provides all required functions for Cell phone numbers to check if phone numbers are correct or not. And returns the Correct phone number with the country code to save it in the database.
