@@ -1,13 +1,13 @@
 # Phone Number Methods Library
 
 ### About
-This library provide all required functions for Cell phonenumbers to check if phonenumbers is correct or not.And returns Correct phonenumber with country code for save it in database.
+This library provides all required functions for Cell phone numbers to check if phone numbers are correct or not. And returns the Correct phone number with the country code to save it in the database.
 
 ### Features
-- Check patern of input PhoneNumber. (e.x) +98 937-***-**** is correct.     
-- Check country code of phonenumber. All Countries code as ISO (2-Digit) 
+- Check patterns of the input phone number. (e.x) +98 937-***-**** is correct.     
+- Check country code of phone number. All Countries code as ISO (2-Digit) 
 - Convert Persian And Arabic Digits to English Digits. 
-- Discover name of country from PhoneNumber.
+- Discover name of country from phone number.
 
 Some new Features will add to this package SOON!
 
