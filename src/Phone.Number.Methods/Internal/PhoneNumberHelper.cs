@@ -84,7 +84,7 @@ namespace PhoneNumber.Methods.Internal
 
                 string countryCode = phoneNumber.Split(phoneNumberWithoutCode)[0];
                 if (!CountryCodeHelper.IsCodeExist(countryCode))
-                    return PhoneNumberResult.Failed($"Country code : {countryCode} Is not exist");
+                    return PhoneNumberResult.Failed($"Country code ({countryCode}) Is not exist");
 
                 return PhoneNumberResult.Succeed(phoneNumber, CountryCodeHelper.GetCountryByCode(countryCode));
             }
@@ -95,7 +95,7 @@ namespace PhoneNumber.Methods.Internal
             }
 
             else
-                return PhoneNumberResult.Failed($"Phone Number digits : {phoneNumber.Length} is Incorrect");
+                return PhoneNumberResult.Failed($"Phone Number digits ({phoneNumber.Length}) are Incorrect");
 
         }
     }
