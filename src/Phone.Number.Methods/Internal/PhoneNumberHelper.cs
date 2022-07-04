@@ -50,6 +50,7 @@ namespace PhoneNumber.Methods.Internal
             phoneNumber = phoneNumber.Replace("-", "");
             phoneNumber = phoneNumber.Replace("_", "");
             phoneNumber = phoneNumber.Replace("+", "");
+            phoneNumber = phoneNumber.Replace(" ", "");
             phoneNumber = ToEnglishNumber(phoneNumber);
 
             if (phoneNumber.StartsWith("00"))
