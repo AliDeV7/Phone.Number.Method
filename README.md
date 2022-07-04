@@ -11,7 +11,7 @@ This library provides all required functions for Cell phone numbers to check if 
 
 Some new features will add to this package SOON!
 
-### Install
+### Example
 After add Package to your project, Call this method to get correct phone number for you database:
 
 ```
@@ -20,7 +20,6 @@ if (result.IsSuccess)
 {
   // You can Check this Outputs
               
-  // result.Message 
   // result.CorrectPhoneNumber
   // result.Country.Name
   // result.Country.ISO
@@ -31,3 +30,4 @@ else
    // Check result.Message 
 }
 ```
+
